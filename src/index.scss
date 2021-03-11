@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.cv-body {
+  background-color: #dedede;
+  width: 70%;
+  max-width: 120rem;
+  padding: 3rem;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+}
