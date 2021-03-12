@@ -1,10 +1,10 @@
 import MainInfo from './MainInfo';
 import ContactInfo from './ContactInfo';
 
-const CVHeader = () => {
+const CVHeader = ({ capitalize }) => {
   return (
     <header className="cv-header">
-      <MainInfo />
+      <MainInfo capitalize={capitalize} />
       <ContactInfo />
     </header>
   );

@@ -1,9 +1,11 @@
 import CVHeader from './CVHeader';
+import Education from './Education';
 
-const CV = () => {
+const CV = ({ capitalize }) => {
   return (
     <div className="cv-body">
-      <CVHeader />
+      <CVHeader capitalize={capitalize} />
+      <Education />
     </div>
   );
 };

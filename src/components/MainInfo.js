@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // main info section of cv header.
 
-const MainInfo = () => {
+const MainInfo = ({ capitalize }) => {
   // state for first name, last name and occupation
   const [firstName, setFirstName] = useState('First Name');
   const [lastName, setLastName] = useState('Last Name');
@@ -19,7 +19,9 @@ const MainInfo = () => {
   // if name is an empty string, set it back to the placeholder name.
   const makeEdit = (e) => {
     const targetName = e.target.getAttribute('name');
-    console.log(targetName);
+    // const targetNameCapitalized = capitalize(targetName);
+
+    // Function(return(`setEditing${targetNameCapitalized}(!editing${targetNameCapitalized})`))();
 
     if (targetName === 'firstName') {
       setEditingFirstName(!editingFirstName);
@@ -50,7 +52,8 @@ const MainInfo = () => {
     <div>
       {editingFirstName ? (
         <input
-          autoFocus="true"
+          className="input-h2"
+          autoFocus={true}
           name="firstName"
           type="text"
           value={firstName}
@@ -64,7 +67,8 @@ const MainInfo = () => {
       )}
       {editingLastName ? (
         <input
-          autoFocus="true"
+          className="input-h2"
+          autoFocus={true}
           name="lastName"
           type="text"
           value={lastName}
@@ -78,7 +82,8 @@ const MainInfo = () => {
       )}
       {editingOccupation ? (
         <input
-          autoFocus="true"
+          className="input-h4"
+          autoFocus={true}
           name="occupation"
           type="text"
           value={occupation}

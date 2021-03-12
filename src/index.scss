@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+
+  font-family: poppins, sans-serif;
 }
 
 html {
@@ -13,7 +15,6 @@ html {
 }
 
 body {
-  font-family: poppins, sans-serif;
 }
 
 li {
@@ -34,29 +35,58 @@ h1 {
   font-weight: 500;
 }
 
-h2 {
+h2,
+.input-h2 {
   font-size: 2.6rem;
-  font-weight: 400;
+  font-weight: 500;
+
+  // max-width: ;
 
   cursor: pointer;
 }
 
-h4 {
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+h4,
+.input-h4 {
   font-size: 1.8rem;
   font-weight: 400;
 
   cursor: pointer;
 }
 
-h5 {
+h5,
+.input-h5 {
   font-size: 1.6rem;
   font-weight: 400;
 
   cursor: pointer;
 }
 
+.input-h2,
+.input-h4,
+.input-h5 {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+  border-left: 3px solid green;
+
+  padding-left: 1rem;
+}
+
+.input-h2 {
+  border-left: 4px solid green;
+
+  padding-left: 2rem;
+}
+
 .cv-body {
   background-color: #dedede;
+  border-radius: 6px;
   width: 70%;
   max-width: 120rem;
   padding: 3rem;
@@ -65,4 +95,17 @@ h5 {
 .cv-header {
   display: flex;
   justify-content: space-between;
+}
+
+.contact-info {
+  min-width: 15rem;
+
+  & input {
+    width: 15rem;
+    max-width: 100%;
+  }
+}
+
+.education {
+  margin-top: 2rem;
 }
