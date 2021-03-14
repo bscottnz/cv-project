@@ -41,8 +41,6 @@ h2,
   font-weight: 500;
 
   // max-width: ;
-
-  cursor: pointer;
 }
 
 h3 {
@@ -54,16 +52,13 @@ h4,
 .input-h4 {
   font-size: 1.8rem;
   font-weight: 400;
-
-  cursor: pointer;
 }
 
 h5,
+p,
 .input-h5 {
   font-size: 1.6rem;
   font-weight: 400;
-
-  cursor: pointer;
 }
 
 .input-h2,
@@ -76,6 +71,11 @@ h5,
   border-left: 3px solid green;
 
   padding-left: 1rem;
+  cursor: pointer;
+}
+
+.editable {
+  cursor: pointer;
 }
 
 .input-h2 {
@@ -90,6 +90,8 @@ h5,
   width: 70%;
   max-width: 120rem;
   padding: 3rem;
+  margin-bottom: 10rem;
+  margin-top: 4rem;
 }
 
 .cv-header {
@@ -108,4 +110,55 @@ h5,
 
 .education {
   margin-top: 2rem;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 4px;
+
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn--add {
+  margin-top: 10px;
+  border: 1px solid green;
+  background-color: green;
+}
+
+.btn--save {
+  border: 1px solid green;
+  background-color: green;
+}
+
+.btn--cancel {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.text-input {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(65, 65, 65);
+
+  &:focus {
+    outline: none;
+    // border-bottom: 1px solid green;
+  }
+
+  &--small {
+    width: 6rem;
+  }
+
+  &--large {
+    width: 30rem;
+  }
+}
+
+textarea {
+  resize: none;
+  height: 8rem;
 }

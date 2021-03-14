@@ -75,7 +75,7 @@ const ContactInfo = () => {
           onBlur={makeEdit}
         />
       ) : (
-        <h5 name="address" onClick={makeEdit}>
+        <h5 className="editable" name="address" onClick={makeEdit}>
           {address}
         </h5>
       )}
@@ -91,7 +91,7 @@ const ContactInfo = () => {
           onBlur={makeEdit}
         />
       ) : (
-        <h5 name="city" onClick={makeEdit}>
+        <h5 name="city" className="editable" onClick={makeEdit}>
           {city}
         </h5>
       )}
@@ -107,7 +107,7 @@ const ContactInfo = () => {
           onBlur={makeEdit}
         />
       ) : (
-        <h5 name="country" onClick={makeEdit}>
+        <h5 name="country" className="editable" onClick={makeEdit}>
           {country}
         </h5>
       )}
@@ -123,7 +123,7 @@ const ContactInfo = () => {
           onBlur={makeEdit}
         />
       ) : (
-        <h5 name="phone" onClick={makeEdit}>
+        <h5 name="phone" className="editable" onClick={makeEdit}>
           {phone}
         </h5>
       )}
@@ -139,7 +139,7 @@ const ContactInfo = () => {
           onBlur={makeEdit}
         />
       ) : (
-        <h5 name="email" onClick={makeEdit}>
+        <h5 name="email" className="editable" onClick={makeEdit}>
           {email}
         </h5>
       )}

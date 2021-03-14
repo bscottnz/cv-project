@@ -61,7 +61,7 @@ const MainInfo = ({ capitalize }) => {
           onChange={(e) => setFirstName(e.target.value)}
         />
       ) : (
-        <h2 onClick={makeEdit} name="firstName">
+        <h2 onClick={makeEdit} name="firstName" className="editable">
           {firstName}
         </h2>
       )}
@@ -76,7 +76,7 @@ const MainInfo = ({ capitalize }) => {
           onChange={(e) => setLastName(e.target.value)}
         />
       ) : (
-        <h2 onClick={makeEdit} name="lastName">
+        <h2 onClick={makeEdit} name="lastName" className="editable">
           {lastName}
         </h2>
       )}
@@ -91,7 +91,7 @@ const MainInfo = ({ capitalize }) => {
           onChange={(e) => setOccupation(e.target.value)}
         />
       ) : (
-        <h4 onClick={makeEdit} name="occupation">
+        <h4 onClick={makeEdit} name="occupation" className="editable">
           {occupation}
         </h4>
       )}
